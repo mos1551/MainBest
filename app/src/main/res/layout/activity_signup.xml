@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_haze"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/SignUp_name_edt_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/red">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/signUp_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="نام و نام خانوادگی"
+                    android:inputType="textPersonName"
+                    android:maxLength="25"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/SignUp_CodeM_edt_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/red">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/signUp_CodeM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="کد ملی"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/SignUp_Mobile_edt_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/red">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/signUp_Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="شماره موبایل"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/SignUp_Tel_edt_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/red">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/signUp_Tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="تلفن ثابت"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/SignUp_Pass_edt_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/red">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/signUp_Pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="رمز ورود"
+                    android:inputType="textPersonName"
+                    android:maxLength="12"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/SignUp_Pass_edt_wrapper_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/red">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/signUp_Pass_Repeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="تکرار رمز ورود"
+                    android:inputType="textPersonName"
+                    android:maxLength="12"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/SignUp_Gender_edt_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/red">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="جنسیت"
+                    android:textColor="@color/maincolor"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/signUp_Female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+                            android:hint="زن"
+                            android:textSize="14sp" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/signUp_Male"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+                            android:hint="مرد"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="64dp"
+                    android:layout_weight="0.5"
+                    android:backgroundTint="@color/maincolor"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearcancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="انصراف"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="64dp"
+                    android:layout_weight="0.5"
+                    android:backgroundTint="@color/maincolor"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearOkSend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="تایید"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

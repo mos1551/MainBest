@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">مدار ذهنی</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_fingerprint">ورود با اثر انگشت</string>
+    <string name="desc_fingerprint">برای ورود اثر انگشت را وارد کنید</string>
+    <string name="title_activity_home">صفحه ورود با اثر انگشت</string>
+    <string name="activity_home_desc">با موفقیت وارد شدید</string>
+    <string name="activity_home_note">مجدد امتحان کنید</string>
+</resources>

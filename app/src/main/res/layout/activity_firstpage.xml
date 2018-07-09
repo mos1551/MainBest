@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_firstpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_haze"
+    android:orientation="vertical"
+    tools:context="com.circlemind.ActivityFirstPage">
+    <include layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="130dp"
+                    android:layout_margin="4dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearFileVoice"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/vipoice"
+                            android:layout_height="65dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="فایل ها صوتی"
+                            android:textColor="@color/maincolor"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="130dp"
+                    android:layout_margin="4dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="16dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/linearMoshakhasat"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="16dp"
+                                android:src="@drawable/persontype"
+                                android:layout_height="65dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:id="@+id/txtnameCustomer"
+                                android:text="نام"
+                                android:textColor="@color/maincolor"
+                                android:textSize="16dp" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:id="@+id/txtNumberCustomer"
+                                android:text="شماره تماس"
+                                android:textColor="@color/maincolor"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="130dp"
+                    android:layout_margin="4dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearFileVideo"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/video"
+                            android:layout_height="65dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="فایل ها تصویری"
+                            android:textColor="@color/maincolor"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="130dp"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearDorehHa"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/doreh"
+                            android:layout_height="65dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="دوره ها"
+                            android:textColor="@color/maincolor"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="130dp"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearPorsesh"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/question"
+                            android:layout_height="65dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="پرسش و پاسخ"
+                            android:textColor="@color/maincolor"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="130dp"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearTamrin"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/excersice"
+                            android:layout_height="65dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="تمرین ها"
+                            android:textColor="@color/maincolor"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearAmozesh"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="آموزش نرم افزار"
+                            android:textColor="@color/maincolor"
+                            android:textSize="16dp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_gravity="end"
+                            android:src="@drawable/learn"
+                            android:layout_height="35dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearSupport"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/orange"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="پشتیبانی نرم افزار"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_gravity="right"
+                            android:src="@drawable/support"
+                            android:layout_height="35dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearSoalat"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="سوالات متداول"
+                            android:textColor="@color/maincolor"
+                            android:textSize="16dp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_gravity="end"
+                            android:src="@drawable/question"
+                            android:layout_height="35dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearSite"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/green"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="سایت مدار ذهنی"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_gravity="right"
+                            android:src="@drawable/web"
+                            android:layout_height="35dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearInstagram"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="اینستاگرام مدار ذهنی"
+                            android:textColor="@color/maincolor"
+                            android:textSize="16dp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_gravity="end"
+                            android:src="@drawable/instagram"
+                            android:layout_height="35dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearRule"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="قوانین و مقررات"
+                            android:textColor="@color/maincolor"
+                            android:textSize="16dp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_gravity="right"
+                            android:src="@drawable/rules"
+                            android:layout_height="35dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearAbout"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="درباره ما"
+                            android:textColor="@color/maincolor"
+                            android:textSize="16dp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_gravity="end"
+                            android:src="@drawable/about"
+                            android:layout_height="35dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearErtebat"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="ارتباط با ما"
+                            android:textColor="@color/maincolor"
+                            android:textSize="16dp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_gravity="right"
+                            android:src="@drawable/contactme"
+                            android:layout_height="35dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearTelegram"
+                        android:orientation="horizontal"
+                        android:background="@color/green"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="کانال مدار ذهنس"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_gravity="end"
+                            android:src="@drawable/telegram"
+                            android:layout_height="35dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

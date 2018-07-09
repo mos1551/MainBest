@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_splash"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:background="@drawable/logo_image"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="36dp"
+        android:visibility="gone"
+        android:src="@drawable/logomind"
+        android:layout_height="36dp" />
+    <ImageView
+        android:id="@+id/imgrefresh"
+        android:layout_marginTop="16dp"
+        android:layout_width="48dp"
+        android:src="@drawable/refreash"
+        android:layout_height="48dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/red"
+        android:textSize="16dp"
+        android:text="اتصال به سرور وجود ندارد !"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/matnButtom"
+        android:textSize="16dp"
+        android:text="مجددا تلاش کنید"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
